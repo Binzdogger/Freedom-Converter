@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Converter - Freedom Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="category-styles.css"> </head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">Back to Categories</a>
+        <h1>Distance Converter</h1>
+    </header>
+
+    <div class="converter-container">
+        <div class="input-section">
+            <label for="distanceInput">Enter Distance:</label>
+            <input type="number" id="distanceInput" placeholder="Enter value">
+            <select id="fromUnit">
+                <option value="meters">Meters (Metric)</option>
+                <option value="kilometers">Kilometers (Metric)</option>
+                <option value="feet">Feet (Imperial)</option>
+                <option value="miles">Miles (Imperial)</option>
+                <option value="footballFields">Football Fields (Freedom)</option>
+            </select>
+        </div>
+
+        <div class="output-section">
+            <h2>Conversions:</h2>
+            <div id="metricOutput">
+                <h3>Metric:</h3>
+                <p id="metersResult">Meters: 0</p>
+                <p id="kilometersResult">Kilometers: 0</p>
+            </div>
+            <div id="imperialOutput">
+                <h3>Imperial:</h3>
+                <p id="feetResult">Feet: 0</p>
+                <p id="milesResult">Miles: 0</p>
+            </div>
+            <div id="freedomOutput">
+                <h3>Freedom Units:</h3>
+                <p id="footballFieldsResult">Football Fields: 0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

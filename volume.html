@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Converter - Freedom Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="category-styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">Back to Categories</a>
+        <h1>Volume Converter</h1>
+    </header>
+
+    <div class="converter-container">
+        <div class="input-section">
+            <label for="volumeInput">Enter Volume:</label>
+            <input type="number" id="volumeInput" placeholder="Enter value">
+            <select id="fromUnit">
+                <option value="milliliters">Milliliters (Metric)</option>
+                <option value="liters">Liters (Metric)</option>
+                <option value="fluidOunces">Fluid Ounces (Imperial)</option>
+                <option value="gallons">Gallons (Imperial)</option>
+                <option value="olympicPools">Olympic Pools (Freedom)</option>
+            </select>
+        </div>
+
+        <div class="output-section">
+            <h2>Conversions:</h2>
+            <div id="metricOutput">
+                <h3>Metric:</h3>
+                <p id="millilitersResult">Milliliters: 0</p>
+                <p id="litersResult">Liters: 0</p>
+            </div>
+            <div id="imperialOutput">
+                <h3>Imperial:</h3>
+                <p id="fluidOuncesResult">Fluid Ounces: 0</p>
+                <p id="gallonsResult">Gallons: 0</p>
+            </div>
+            <div id="freedomOutput">
+                <h3>Freedom Units:</h3>
+                <p id="olympicPoolsResult">Olympic Pools: 0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

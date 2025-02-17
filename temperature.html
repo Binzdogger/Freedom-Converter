@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter - Freedom Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="category-styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">Back to Categories</a>
+        <h1>Temperature Converter</h1>
+    </header>
+
+    <div class="converter-container">
+        <div class="input-section">
+            <label for="temperatureInput">Enter Temperature:</label>
+            <input type="number" id="temperatureInput" placeholder="Enter value">
+            <select id="fromUnit">
+                <option value="celsius">Celsius (Metric)</option>
+                <option value="fahrenheit">Fahrenheit (Freedom)</option>
+                <option value="kelvin">Kelvin (Metric)</option>
+            </select>
+        </div>
+
+        <div class="output-section">
+            <h2>Conversions:</h2>
+            <div id="metricOutput">
+                <h3>Metric:</h3>
+                <p id="celsiusResult">Celsius: 0</p>
+                <p id="kelvinResult">Kelvin: 0</p>
+            </div>
+            <div id="freedomOutput">
+                <h3>Freedom Units:</h3>
+                <p id="fahrenheitResult">Fahrenheit: 0</p>
+            </div>
+            <div id="imperialOutput" style="display:none;">
+                <h3>Imperial:</h3>
+                <p>Fahrenheit is used as Freedom unit for temperature, Imperial section is hidden.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
